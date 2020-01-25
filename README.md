@@ -8,7 +8,8 @@ This implementation does not utilize the pyotp package but hardcodes the algorit
 
 A bash script is included to make using the files easier. Instructions are below. 
 
-The code algo is written in comments step by step in both create.py and verify.py
+Comments are included to explain algorithm
+
 ========================================================
 Program Guide
 
