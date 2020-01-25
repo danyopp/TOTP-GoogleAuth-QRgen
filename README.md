@@ -8,31 +8,28 @@ This implementation does not utilize the pyotp package but hardcodes the algorit
 
 A bash script is included to make using the files easier. Instructions are below. 
 
-Comments are included to explain algorithm
-
-========================================================
 Program Guide
-
-Prereqs:
-
-
-   Input:
-	./submission.sh --installer
+========================================================
 
 
-======= Creating a QR code: =================================
-   Input:
-	 ./submission.sh --generate-qr
+	**./submission.sh --installer**
+
+	Will attempt to install any needed dependencies 
+
+Creating a QR code: =================================
 
 
+   	**./submission.sh --generate-qr**  
+
+	
+	Scan the QR code with the iOS GA app. It should automatically add to the list of authentications
 	This will create a text file titled AuthentKey.txt that contains the username and key of the created QR code. 
 	The QR code is also created and placed in the same directory.
 
-Scan the QR code with the iOS GA app. It should automatically add to the list of authentications
+
+Getting an OTP: ====================================
 
 
-======= Getting an OTP: ====================================
-   Input:
-	./submission.sh --get-otp
+	**./submission.sh --get-otp **
 	
 	This will use the AuthentKey.txt file to determine the TOTP 
